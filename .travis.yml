@@ -19,5 +19,7 @@ before_script:
 script:
 - ./gradlew assemble
 - ./gradlew check
+- ./gradlew codeCoverageReport
 
-
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

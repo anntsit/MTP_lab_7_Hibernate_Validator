@@ -10,5 +10,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.glassfish:javax.el:3.0.1-b08" level="project" />
+    <orderEntry type="library" name="javax.validation:validation-api:2.0.0.Final" level="project" />
+    <orderEntry type="library" name="org.glassfish:javax.el:3.0.1-b08" level="project" />
+    <orderEntry type="library" name="org.hibernate:hibernate-validator:6.0.4.Final" level="project" />
+    <orderEntry type="library" name="org.projectlombok:lombok:1.16.18" level="project" />
   </component>
 </module>
