@@ -1,5 +1,8 @@
+package validation;
+
+import validation.Insurance;
+
 import javax.validation.*;
-import java.util.ArrayList;
 import java.util.Set;
 
 public class Main {
@@ -12,10 +15,6 @@ public class Main {
         Person incCarrier2 = new Person("John", "Smith", 28, "111" ); // problem
         Person owner2 = new Person("Mary", "Koh", 19, "mary@dd.en" );
         Insurance insurance2 = new Insurance("1H33KL90", incCarrier2, 800, owner2);
-
-        ArrayList<Insurance> inc = new ArrayList<>();
-        inc.add(insurance1);
-        inc.add(insurance2);
 
         getInfo(insurance1);
         getInfo(insurance2);
@@ -34,7 +33,7 @@ public class Main {
         return isValid;
     }
 
-    public static void getInfo(Insurance insurance){
+    public static boolean getInfo(Insurance insurance){
         Metrix.start();
         boolean flag1= validateObject(insurance);
         Metrix.stop();
@@ -42,5 +41,6 @@ public class Main {
         else System.out.println("There is a problem while validating this object");
         Metrix.getAllMetrics();
         System.out.println("");
+        return true;
     }
 }

@@ -1,3 +1,5 @@
+package validation;
+
 public class Metrix {
     private static long startTime;
     private static long stopTime;

@@ -1,3 +1,5 @@
+package validation;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -5,7 +7,6 @@ import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 @Getter
-@Setter
 public class Insurance {
     @NotNull
     @Size(max = 8, min = 8)
@@ -18,7 +19,7 @@ public class Insurance {
     @DecimalMin("500.0")
     public double cost;
 
-    public Insurance(String code,Person owner, double cost, Person incCarrier ){
+    public Insurance(String code, Person owner, double cost, Person incCarrier ){
         incCode = code;
         this.owner = owner;
         this.cost = cost;

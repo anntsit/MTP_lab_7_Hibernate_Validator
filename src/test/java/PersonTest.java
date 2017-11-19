@@ -1,4 +1,5 @@
 import org.junit.*;
+import validation.Person;
 
 import javax.validation.*;
 import java.util.Set;

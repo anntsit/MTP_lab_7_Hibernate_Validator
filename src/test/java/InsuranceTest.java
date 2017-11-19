@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+import validation.Insurance;
+import validation.Person;
 
 import javax.validation.*;
 
