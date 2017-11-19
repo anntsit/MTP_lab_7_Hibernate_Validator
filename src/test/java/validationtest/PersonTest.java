@@ -1,3 +1,5 @@
+package validationtest;
+
 import org.junit.*;
 import validation.Person;
 
